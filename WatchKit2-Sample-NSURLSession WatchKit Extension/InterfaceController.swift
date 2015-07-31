@@ -36,6 +36,14 @@ class InterfaceController: WKInterfaceController {
         }
     }
     
+    /*
+     如果运行时发生如下错误：
+        Error Domain=NSURLErrorDomain Code=-1200
+        "An SSL error has occurred and a secure connection to the server cannot be made."
+     请尝试在Info.plist文件中添加如下属性：（本工程中已经添加）
+        NSAppTransportSecurity Dictionary
+            NSAllowsArbitraryLoads YES
+     */
     @IBAction func getImageBtnTapped() {
         
         /* 设置网络图片的URL */
