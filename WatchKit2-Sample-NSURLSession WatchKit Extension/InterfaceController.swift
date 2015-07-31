@@ -39,7 +39,7 @@ class InterfaceController: WKInterfaceController {
     @IBAction func getImageBtnTapped() {
         
         /* 设置网络图片的URL */
-        let url = NSURL(string:"https://devimages.apple.com.edgekey.net/assets/elements/icons/128x128/watchos-2_2x.png")!
+        let url = NSURL(string:"https://devimages.apple.com.edgekey.net/assets/elements/icons/128x128/watchos-2_2x.png")!// 此图片链接仅供测试使用，请更换图片链接
         
         /* 获得一个NSURLSessionConfiguration对象 */
         let conf = NSURLSessionConfiguration.defaultSessionConfiguration()
